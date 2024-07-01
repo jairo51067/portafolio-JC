@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio-Jairo Cárdenas-v1</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+
+    <!-- Archivos Normalize -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+
+    <!-- Archivos GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Archivos CSS Bootstrap -->
+    <link type="text/css" href="CSS/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Archivos de CSS Personalizados -->
+    <link rel="stylesheet" href="css/fotos.css">
+    <link rel="stylesheet" href="css/generales.css">
+    <link rel="stylesheet" href="css/texto-multiple.css">
+    <link rel="stylesheet" href="css/parallax.css">
+
+    <!-- Archivos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+    <header>
+        <!-- navegador -->
+        <nav class="navbar navbar-dark navbar-expand-md bg-black">
+            <div class="container my-2">
+                <a href="index.html" class="navbar-brand">
+                    <img src="imgs/logojacmwb.png" alt="logo personal" class="logojacm pulsante" width="60">
+                </a>
+                <!-- Colocamos el botón móvil usando la clase .navbar-toggler -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                    aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu desplegable -->
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active pulsante" href="misproyectos.html">Mis Trabajos</a>
+                            <!-- Definimos un enlace activo colocando la clase “active” -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Mi formación</a> <!--Mis fortalezas -->
+                            <ul class="dropdown-menu bg-black">
+                                <li><a class="dropdown-item bg-dark text-white py-3" href="#formacionautodidacta"
+                                        onclick="cargarDiv3()">Formación Autodidacta</a>
+                                </li>
+                                <li>
+                                    <!-- <hr class="dropdown-divider"> -->
+                                <li><a class="dropdown-item bg-dark text-white py-3" href="#formacionacademicaformal"
+                                        onclick="cargarDiv4()">Formación Académica</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conoceme">Conóceme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#escribeme">Escríbeme</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="btnTituloYTexto">Descargar CV</button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doc/curriculum-JAIRO-CÁRDENAS-v1.pdf" target="_blank"><i
+                                    class="fa-solid fa-print me-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- imagen de presentación -->
+        <div class="m-0 p-0 px-1">
+
+            <div>
+                <div class="container-fluid m-0 p-0">
+                    <div class="hero-image1 d-xl-none"></div>
+                </div>
+
+                <div class="d-none d-xl-block">
+                    <div class="hero-image border border-black">
+                        <!-- Animación de escritura de texto CSS | Animación de escritura de texto múltiple -->
+                        <div class="wrapper-out">
+                            <div class="wrapper-in">
+                                <div class="static-txt">Soy </div>
+                                <div class="dynamic-txt">
+                                    <ul>
+                                        <li><span>JAIRO CÁRDENAS</span></li>
+                                        <li><span>un Desarrollador Web</span></li>
+                                        <li><span>un Programador</span></li>
+                                        <li><span>Freelancer</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mis fortalezas -->
+        <div class="container-fluid px-5 py-2">
+            <p class="text-end titulo">
+                <button class=" btn fortalezas fs-5 pulsante" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    "Conoce mis puntos fuertes"
+                </button>
+            </p>
+        </div>
+
+        <div class="offcanvas offcanvas-end text-black" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Habilidades y Destrezas</h5>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <hr>
+            <div class="offcanvas-body">
+                <div>
+                    Poseo un conjunto de habilidades técnicas y blandas que me permiten, desarrollar proyectos al
+                    nivel de las exigencias, tanto de forma independiente como en equipo.
+                </div>
+                <hr>
+                <!-- Soft Skills -->
+                <div class="dropdown">
+                    <button class="btn text-black dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Soft Skills
+                    </button>
+                    <ul class="dropdown-menu bg-black">
+                        <li><a class="dropdown-item  text-white bg-black " href="#">Comunicación efectiva</a> </li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Trabajo en equipo</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Adaptabilidad y aprendizaje
+                                continuo</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Resolución de problemas</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Ética profesional</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Gestión del tiempo</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <!-- Hard Skills -->
+                <div class="dropdown">
+                    <button class="btn text-black dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Hard Skills
+                    </button>
+                    <ul class="dropdown-menu bg-black">
+                        <li><a class="dropdown-item text-white bg-black " href="#">HTML5</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">CSS3 - Bootstrap CSS - Tailwind
+                                CSS - Sass</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">JavaScript - React - JQuery -
+                                Angular</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">PHP - Laravel</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Python</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">SQL - MySQL</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Bases de Datos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Git - GitHub</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Notion - Trello</a></li>
+                        <li><a class="dropdown-item text-white bg-black " href="#">Figma</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- main parallax -->
+        <!-- conóceme -->
+        <section class="text-white p-5" id="conoceme">
+            <div class="titulo">
+                <h1>Un viaje a través de mi mundo</h1>
+                <p class="titulo">Soy un profesional universitario, apasionado por el Desarrollo Web y la Programación, mi
+                    mente
+                    es un
+                    hervidero de ideas creativas que las transformo en proyectos, me inspira ser parte de equipos
+                    triunfadores y me motiva resolver problemas juntos. En mi tiempo libre, me dedico a la electronica y
+                    hacer ejercicios. Me apasiona leer y aprender continuamente y disfruto mucho del buen descanso. No
+                    soy
+                    perfecto, pero sí soy auténtico, soy honesto, transparente y siempre estoy dispuesto a aportar todo
+                    mi
+                    conocimiento, aprender de los demás y crecer constantemente.</p>
+            </div>
+        </section>
+        <!-- Formación autodidacta -->
+        <section class="text-white" id="formacionautodidacta">
+            <div class="border border-3 p-3 transicion-texto">
+                <h1>Formación autodidacta:</h1>
+                <ol>
+                    <li>Habilidades adquiridas: HTML5 - CSS3 - Bootstrap - Sass - Tailwind - JavaScript - react - JQuery
+                        - Angular - PHP - Laravel -
+                        SQL - MySQL - Bases de Datos - Git - GitHub - Notion - Trello - Figma</li>
+                    <li>De manera secuencial y constante, me he dedicado con entusiasmo y decisión al aprendizaje y
+                        manejo de las habilidades que he ido desarrollando. Para ello, me he apoyado en diversos
+                        recursos, como cursos online en plataformas como Google Active, Alura Latam y Udemy, canales de
+                        YouTube especializados en la temática y libros de guía.</li>
+                    <li>Como resultado de esta formación autodidacta, mi mejor referencia son los proyectos que puedo
+                        presentarles, donde aplico lo aprendido hasta ahora.</li>
+                </ol>
+            </div>
+        </section>
+        <!-- Formación académica formal -->
+        <section class="text-white" id="formacionacademicaformal">
+            <div class="border border-3 p-3 transicion-texto">
+                <h1>Formación académica formal:</h1>
+                <ul>
+                    <li>Técnico Superior en Alimentos - Instituto Universitario Agro-Industrial Region Los Andes - 1990
+                        - Sede Tachira</li>
+                    <li>Me desarrollé durante 25 años en la industria alimentaria, especialmente en el área láctea.
+                        Inicié como pasante y me retiré en la gerencia operativa.</li>
+                    <li>Siempre inquieto y con gran inclinación por el desarrollo de la tecnología y el entusiasmo por
+                        la programación, al finalizar mi carrera en plantas, me he dedicado al aprendizaje autodidacta.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 1era foto  -->
+        <div class="foto1">
+            <div class="letrero1 text-center">
+                <p class="display-6 p-5 m-0">Desarrollo Web y la Programación</p>
+                <hr>
+                <p class="h6 p-5 m-0">Desafiando mis límites</p>
+            </div>
+        </div>
+        <div class="text-white p-5 m-0">
+            <p>Con cada proyecto que emprendo, me enfrento a nuevos desafíos que me obligan a pensar de manera
+                crítica y creativa. Es en esos momentos de dificultad donde encuentro la mayor satisfacción, al superar
+                obstáculos y alcanzar mis metas.</p>
+        </div>
+
+        <!-- 2da foto -->
+        <div class="foto2">
+            <div class="letrero2 text-center">
+                <p class="display-6 p-5 m-0">ejercicios y estilo de vida</p>
+                <hr>
+                <p class="h6 p-5 m-0">¡El ejercicio es mi medicina!</p>
+            </div>
+        </div>
+        <div class="text-white p-5 m-0">
+            <p>La programación no se limita a sentarse frente a una computadora y escribir código. Es un estilo de vida
+                que se integra con diversos aspectos de nuestro día a día, incluyendo los ejercicios. Incorporar la
+                programación a tu rutina de ejercicios puede ser una forma divertida y creativa de mantenerte activo y
+                mejorar tu salud física y mental.</p>
+        </div>
+
+        <!--  3era foto -->
+        <div class="foto3">
+            <div class="letrero3 text-center">
+                <p class="display-6 p-5 m-0">lectura - descanso</p>
+                <hr>
+                <p class="h6 p-5 m-0">mi mejor inversion</p>
+            </div>
+        </div>
+
+        <!-- escríbeme -->
+        <section class="text-white" id="escribeme">
+            <h3>Escríbeme</h3>
+            <p class="pt-3"><strong> ¿Buscas un desarrollador web confiable y profesional para tu próximo proyecto?
+                </strong> Tengo las habilidades y la experiencia para crear sitios web y aplicaciones que te ayudarán a
+                alcanzar tus objetivos comerciales. <strong>¿Eres un negocio que necesita un sitio web moderno y
+                    efectivo?</strong> Puedo ayudarte a crear un sitio web que te ayude a atraer más clientes, aumentar
+                tus ventas y mejorar tu imagen de marca. <strong>¿Eres un desarrollador de software que necesita ayuda
+                    con la depuración o el mantenimiento de tu código?</strong> Puedo ayudarte a identificar y
+                solucionar problemas en tu código, así como a optimizar su rendimiento.</p>
+        </section>
+
+        <!-- contacto -->
+        <section class="text-white">
+            <div class="text-start ">
+
+                <div class="col-12 my-3">
+                    <hr class="my-4">
+                    <h5 class="text-uppercase fw-bold text-start">Contacto</h5>
+
+                    <hr class="my-4">
+                    <p>
+                        <i class="fas fa-envelope me-3 text-warning"></i><a href="mailto:jairocardenas05@gmail.com"
+                            target="_blank" class="text-warning"> <strong> jairocardenas05@gmail.com</strong></a>
+                    </p>
+
+                    <hr class="mb-4">
+                    <p>
+                        <i class="fas fa-phone me-3 text-success"></i><a href="https://wa.me/5804161709611"
+                            target="_blank" class="text-success"><strong>WhatsApp</strong></a><br>+ 58 - 0416 - 1709611
+                    </p>
+
+                    <hr class="mb-4">
+                    <p>
+                        <i class="fa-solid fa-location-pin me-3 text-danger"></i><a
+                            href="https://es.wikipedia.org/wiki/Venezuela" target="_blank" class="text-danger"> <strong>
+                                Venezuela </strong></a>
+
+                        <img src="imgs/bandera_venezuela_icon.png" class="mx-3" alt="Bandera de Venezuela">
+                    </p>
+                </div>
+
+                <hr class="mb-4">
+                <div class="col-12 my-5">
+                    <p class="fst-italic text-end my-3"> portafolio de <br> <strong>-- Jairo Cárdenas
+                            --</strong>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- pie de pagina -->
+    <footer class="container-fluid bg-black py-3 border-top border-2">
+        <div class="container text-center text-md-start text-white d-sm-flex justify-content-between">
+            <div class="text-start my-3">
+                <ul class="list-unstyled list-inline my-3">
+                    <li class="list-inline-item text-white">
+                        <a href="https://www.linkedin.com/in/jairo-antonio-c%C3%A1rdenas-morales-49b94b25"
+                            target="_blank" class="text-white mx-2 fs-5">
+                            <i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <!-- <li class="list-inline-item">
+                        <a href="https://github.com/jairo51067?tab=repositories" target="_blank"
+                            class="text-white mx-2 fs-5">
+                            <i class="fa-brands fa-square-github"></i></a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="text-start my-3">
+                <p class="my-3">Copyright&copy;2024 Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- cursor -->
+    <div class="cursor"></div>
+
+    <!-- Archivos Bootstrap JavaScript -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Archivos SweetAlert2  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Archivos JavaScript Generales -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

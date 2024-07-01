@@ -1,0 +1,72 @@
+/* ----------------------------- *\
+  &Estilos parallax
+\* ----------------------------- */
+
+.foto1 {
+  background-image: url(../imgs/foto_1.jpg);
+  min-height: 70%;
+}
+
+.foto2 {
+  background-image: url(../imgs/foto_2.jpg);
+  min-height: 70%;
+}
+
+.foto3 {
+  background-image: url(../imgs/foto_3.jpg);
+  min-height: 70%;
+}
+
+.foto1,
+.foto2,
+.foto3,
+.foto4 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Con esta linea de codigo le damos el efecto parallax a nuestra paguina web */
+  background-attachment: fixed;
+}
+
+
+.letrero1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 300%;
+  /* top: 50%; */
+}
+
+.letrero2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 300%;
+  /* top: 50%; */
+}
+
+.letrero3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 300%;
+  /* top: 50%; */
+}
+
+.letrero4 {
+  color: hsl(0, 0%, 100%);
+  font-size: 300%;
+  
+}
+
+.letrero1,
+.letrero2,
+.letrero3,
+.letrero4 {
+  text-transform: uppercase;
+  letter-spacing: 1px; /*Espaciado entre letras, del letrero*/
+  background-color: #3333339f;
+}
+
+section {
+  padding: 2.78rem 4.45rem;
+}
+
+
+
+

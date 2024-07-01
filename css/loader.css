@@ -1,0 +1,41 @@
+/* ----------------------------- *\
+        &Animacion loader
+\* ----------------------------- */
+
+    .loader {
+        width: 15rem;
+        aspect-ratio: 1;
+        display: grid;
+        border: 18px solid #0000;
+        border-radius: 50%;
+        border-color: #ccc #0000;
+        animation: l16 1s infinite linear;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+
+    .loader::before,
+    .loader::after {
+        content: "";
+        grid-area: 1/1;
+        margin: 1rem;
+        border: inherit;
+        border-radius: 50%;
+    }
+
+    .loader::before {
+        border-color: var(--color-animación) #0000;
+        animation: inherit;
+        animation-duration: .7s;
+        animation-direction: reverse;
+    }
+
+    .loader::after {
+        margin: 1rem;
+    }
+
+    @keyframes l16 {
+        100% {
+            transform: rotate(0.5turn)
+        }
+    }
