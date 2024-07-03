@@ -39,3 +39,14 @@
             transform: rotate(0.5turn)
         }
     }
+
+    @media (max-width: 768px) {
+        .loader-movil {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+  
+        }
+      }

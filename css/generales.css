@@ -39,6 +39,7 @@ html {
     font-size: 16px;
   }
 } 
+
 @media (max-width: 425px) {
   html {
     font-size: 14px;
@@ -81,7 +82,7 @@ img{
 
 @keyframes pulsante {
   50% {
-    scale: 1.11;
+    scale: 1.05;
   }
 }
 
@@ -129,25 +130,6 @@ img{
   padding: 5%;
 }
 
-/* cursor */
-/* .cursor{
-  padding: 5px;
-  width: 13px;
-  height: 13px;
-  border: 1px solid #000000;
-  background-color: orangered;
-  outline: 5px solid black;
-  border-radius: 50%;
-  position: absolute;
-  transition-duration: 100ms ;
-}
-
-@media (max-width: 1024px) {
-  .cursor {
-    display: none;
-  }
-} */
-
 /* transiciones */
 .titulo {
   animation-duration: 3s;
@@ -162,7 +144,7 @@ img{
 
   to {
     margin-left: 0%;
-    width: 100%;
+    width: 100%; 
   }
 }
 
@@ -177,5 +159,21 @@ img{
   }
   100% {
     transform: rotateY(360deg);
+  }
+} 
+
+.transition-texto{
+  animation-name: transition-texto;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+
+}
+
+@keyframes transition-texto {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
   }
 }
