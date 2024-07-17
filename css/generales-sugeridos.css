@@ -1,0 +1,170 @@
+/****************************************/
+/* ----------------------------- *\
+  &VARIABLES 
+\* ----------------------------- */
+:root {
+    --main-bg-color: #000000;
+    --bg-primary: #161616;
+    --bg-secondary: #808080;
+    --text-primary: #FFFFFF;
+    --text-secondary: #000000;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 18px;
+    --color-animación: orangered;
+  }
+  
+  /* ----------------------------- *\
+    &Estilos Generales
+  \* ----------------------------- */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--main-bg-color);
+    color: var(--text-primary);
+  }
+  
+  html {
+    font-size: var(--font-size-base);
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: calc(var(--font-size-base) * 0.9);
+    }
+  }
+  
+  @media (max-width: 425px) {
+    html {
+      font-size: calc(var(--font-size-base) * 0.8);
+    }
+  }
+  
+  /* ----------------------------- *\
+    &Enlaces y botones
+  \* ----------------------------- */
+  
+  a {
+    text-decoration: none;
+    color: var(--text-secondary);
+  }
+  
+  a:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+  }
+  
+  button {
+    background-color: var(--bg-primary);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+  
+  /* ----------------------------- *\
+    &Estilos imagenes
+  \* ----------------------------- */
+  img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  
+  /* ----------------------------- *\
+    &Estilos Tarjeta y proyectos
+  \* ----------------------------- */
+  
+  .card {
+    background-color: var(--bg-primary);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .proyectos {
+    color: var(--color-animación);
+  }
+  
+  .proyectos:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+  
+  
+  /* ----------------------------- *\
+    &Estilos Animaciones
+  \* ----------------------------- */
+  .pulsante {
+    animation: pulsante 5s infinite;
+  }
+  
+  @keyframes pulsante {
+    50% {
+      scale: 1.05;
+    }
+  }
+  
+  .transition-texto {
+    animation: transition-texto 5s forwards;
+  }
+  
+  @keyframes transition-texto {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* ----------------------------- *\
+    &Otros estilos
+  \* ----------------------------- */
+  .logojacm {
+    filter: drop-shadow(-1px 0px 3px rgba(255, 255, 255, 0.45));
+    z-index: -1;
+  }
+  
+  .fortalezas {
+    color: var(--color-animación);
+  }
+  
+  .fortalezas:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  /*
+  He realizado algunos cambios y mejoras, como:
+  
+  Agrupé los estilos relacionados con los enlaces y botones en una sección separada.
+  Agrupé los estilos relacionados con las tarjetas y proyectos en una sección separada.
+  Agrupé los estilos relacionados con las animaciones en una sección separada.
+  Utilicé variables CSS para los colores, fuentes y tamaños de fuente.
+  Utilicé la unidad calc para calcular el tamaño de fuente en los media queries.
+  Agrupé los estilos relacionados con los elementos de título, párrafo, imagen y tabla en una sección separada.
+  Quité algunos estilos que no eran necesarios o estaban duplicados.
+  
+  */

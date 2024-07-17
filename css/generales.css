@@ -1,54 +1,52 @@
 /* ----------------------------- *\
   &VARIABLES 
 \* ----------------------------- */
-:root {
-  --main-bg-color: black;
-  --bg-primary: #161616;
-  --bg-secondary: grey;
-
-  --text-primary: white;
-  --text-secondary: black;
-
-  --font-family: "Roboto", sans-serif;
-  /* --font-family-text-cuerpo: "Lato", sans-serif;
-  --font-family-text-secondary: "Open Sans", sans-serif;  */
-
-  --color-animación: orangered;
+:root { 
+  --main-bg-color: #000000;
+    --bg-primary: #161616;
+    --bg-secondary: #808080;
+    --text-primary: #FFFFFF;
+    --text-secondary: #000000;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 18px;
+    --color-animación: orangered;
 }
 
 /* ----------------------------- *\
   &Estilos Generales
 \* ----------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color:#000000;
-  /* margin-left: auto;
-  margin-right: auto;
-  max-width: 1440px; */
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background-color: var(--main-bg-color);
+  color: var(--text-primary);
 }
 
 html {
-  font-size: 18px;
+  font-size: var(--font-size-base);
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 16px;
-  }
-} 
-
-@media (max-width: 425px) {
-  html {
-    font-size: 14px;
+    font-size: calc(var(--font-size-base) * 0.9);
   }
 }
 
-a,
-li {
+@media (max-width: 425px) {
+  html {
+    font-size: calc(var(--font-size-base) * 0.8);
+  }
+}
+
+a {
   text-decoration: none;
+    color: var(--text-secondary);
 }
 
 a:hover {
@@ -68,7 +66,9 @@ section {
 
 img{
   object-fit: contain;
-  /* clip-path: circle(30%); */
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
 }
 
 .logojacm{
@@ -177,3 +177,4 @@ img{
     opacity: 1;
   }
 }
+
