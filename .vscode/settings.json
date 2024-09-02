@@ -13,5 +13,7 @@
         "presentacion",
         "slidein",
         "Swal"
-    ]
+    ],
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }
