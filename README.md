@@ -3,8 +3,10 @@ Este portafolio personal es una vitrina digital que refleja mi trayectoria como 
 
 [Enlace al portafolio](https://jairo51067.github.io/portafolio-JC/)  
 <br>
+
 ## Imagen del proyecto
 <br>
+
 ![portafolio_2](https://github.com/user-attachments/assets/a80c5078-5e77-49b7-8233-d980707f6208)
 
 ## Descripción
