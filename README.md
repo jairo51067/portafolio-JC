@@ -1,7 +1,8 @@
 # Portafolio de Jairo Cárdenas
 Este portafolio personal es una vitrina digital que refleja mi trayectoria como desarrollador web y programador. A lo largo del desarrollo de este proyecto, superé desafíos como la implementación de un diseño responsivo y atractivo que se adapta a diferentes dispositivos, así como la integración de animaciones y efectos visuales que mejoran la experiencia del usuario. Utilizando tecnologías como HTML5, CSS3, Bootstrap y JavaScript, logré crear una plataforma que no solo muestra mis habilidades técnicas, sino que también comunica mi pasión por el desarrollo web. 
 
-[Enlace al proyecto](https://jairo51067.github.io/portafolio-JC/)  
+[Enlace al portafolio](https://jairo51067.github.io/portafolio-JC/)  
+<br>
 ![portafolio_2](https://github.com/user-attachments/assets/b8fe29ad-03d7-429e-972d-91e5b0e03ff3) 
 
 ## Descripción
