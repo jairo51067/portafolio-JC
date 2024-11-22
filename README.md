@@ -20,12 +20,8 @@ Este portafolio personal es un sitio web diseñado para mostrar mis habilidades 
 - **JavaScript**: Se utiliza para implementar interactividad, como menús desplegables y efectos visuales.
 - **Bootstrap**: Facilita el diseño responsivo y el uso de componentes predefinidos que mejoran la experiencia del usuario.
 
-## Instrucciones de instalación y uso
-1. Clona el repositorio: `git clone https://github.com/jairo51067/portafolio-JC.git`
-2. Abre el archivo `index.html` en tu navegador para ver el portafolio en acción.
-
 ## Agradecimientos
 Agradezco a todos los recursos en línea, cursos y comunidades que me han apoyado en mi aprendizaje y desarrollo como profesional en el campo del desarrollo web. En particular, quiero agradecer a plataformas como Udemy y YouTube, donde encontré tutoriales y guías que me ayudaron a mejorar mis habilidades. También agradezco a mis compañeros desarrolladores por su apoyo y colaboración en este camino.
 
-https://jairo51067.github.io/portafolio-JC/
-deployed by @jairo51067
+https://jairo51067.github.io/portafolio-JC/ 
+deployed by  @jairo51067 
