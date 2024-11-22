@@ -1,15 +1,15 @@
 /* ----------------------------- *\
   &VARIABLES 
 \* ----------------------------- */
-:root { 
+:root {
   --main-bg-color: #000000;
-    --bg-primary: #161616;
-    --bg-secondary: #808080;
-    --text-primary: #FFFFFF;
-    --text-secondary: #000000;
-    --font-family: 'Roboto', sans-serif;
-    --font-size-base: 18px;
-    --color-animación: orangered;
+  --bg-primary: #161616;
+  --bg-secondary: #808080;
+  --text-primary: #F6F6F6;
+  --text-secondary: #000000;
+  --font-family: 'Roboto', sans-serif;
+  --font-size-base: 18px;
+  --color-animación: orangered;
 }
 
 /* ----------------------------- *\
@@ -28,25 +28,9 @@ body {
   color: var(--text-primary);
 }
 
-html {
-  font-size: var(--font-size-base);
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: calc(var(--font-size-base) * 0.9);
-  }
-}
-
-@media (max-width: 425px) {
-  html {
-    font-size: calc(var(--font-size-base) * 0.8);
-  }
-}
-
 a {
   text-decoration: none;
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 a:hover {
@@ -64,19 +48,18 @@ section {
   padding: 2.78rem 4.45rem;
 }
 
-img{
+img {
   object-fit: contain;
   max-width: 100%;
   height: auto;
-  margin: 10px;
 }
 
-.logojacm{
-  filter: drop-shadow(-1px 0px 3px rgba(255,255,255,0.45));   
+.logojacm {
+  filter: drop-shadow(-1px 0px 3px rgba(255, 255, 255, 0.45));
   z-index: -1;
 }
 
-.pulsante{
+.pulsante {
   animation: pulsante 5s infinite;
 }
 
@@ -110,22 +93,23 @@ img{
   display: none;
 }
 
-.fortalezas, .proyectos{
-  color: orangered;  
+.fortalezas,
+.proyectos {
+  color: orangered;
 }
 
-.fortalezas:hover{
+.fortalezas:hover {
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
 
 /* mis proyectos */
-.hidden{
+.hidden {
   display: none;
 }
 
-.card{
-  background-color: #202020;
+.card {
+  background-color: #3d3d3d;
   color: #fff;
   padding: 5%;
 }
@@ -144,11 +128,11 @@ img{
 
   to {
     margin-left: 0%;
-    width: 100%; 
+    width: 100%;
   }
 }
 
-.card{
+.card {
   animation: rotate-and-stay 3s forwards;
 
 }
@@ -157,12 +141,13 @@ img{
   0% {
     transform: rotateY(0deg);
   }
+
   100% {
     transform: rotateY(360deg);
   }
-} 
+}
 
-.transition-texto{
+.transition-texto {
   animation-name: transition-texto;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -170,11 +155,27 @@ img{
 }
 
 @keyframes transition-texto {
-  from{
+  from {
     opacity: 0;
   }
-  to{
+
+  to {
     opacity: 1;
   }
 }
 
+html, body {
+  font-size: var(--font-size-base);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: calc(var(--font-size-base) * 0.9);
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: calc(var(--font-size-base) * 0.8);
+  }
+}

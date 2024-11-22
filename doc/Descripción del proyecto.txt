@@ -1,8 +1,0 @@
-RECURSOS UTILIZADOS
-
-html
-css - bootstrap
-js
-Animaciones de presentación
-
-
