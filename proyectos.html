@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Portafolio de Jairo Cárdenas">
+  <meta property="og:description" content="Explora mi portafolio de proyectos y habilidades">
+  <meta property="og:image"
+    content="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/196728352/original/41fd8c7318ef7de684933650c73d6278f047e88b/create-your-digital-porfolio.jpg">
+  <meta property="og:url" content="https://jairo51067.github.io/portafolio-JC/">
+  <meta property="linkedin:title" content="Portafolio de Jairo Cárdenas">
+  <meta property="linkedin:description" content="Explora mi portafolio de proyectos y habilidades">
+  <meta property="linkedin:image"
+    content="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/196728352/original/41fd8c7318ef7de684933650c73d6278f047e88b/create-your-digital-porfolio.jpg">
+  <title>Portafolio de Jairo Cárdenas | Desarrollador Web</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+
+  <!-- Archivos GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Archivos CSS Bootstrap -->
+  <link type="text/css" href="bootstrap.min.css" rel="stylesheet">
+
+  <!-- Archivos de CSS Personalizados -->
+  <link rel="stylesheet" href="css/proyectos.css">
+
+  <!-- Archivos FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Archivos Sweeralert -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+  <header class="timeline-header">
+    <div class="header-logo-title">
+      <a href="portafolio.html" class="navbar-brand proyectos">
+        <img src="imgs/logojacmfc.png" alt="logo personal" class="logojacm pulsante me-3" width="60" height="auto"></a>
+      <h2>Explora Mis Trabajos: Vista Cronológica</h2>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="filters">
+      <button id="scroll-top" class="scroll-button">⬆ Volver al Inicio</button>
+      <button data-filter="all" class="filter-button active">Todos</button>
+      <button data-filter="advanced" class="filter-button">Avanzados</button>
+      <button data-filter="intermediate" class="filter-button">Intermedios</button>
+      <button data-filter="basic" class="filter-button">Básicos</button>
+      <a class="button-return" href="portafolio.html#contacto">Contacto</a>
+      
+    </div>
+
+    <section class="timeline">
+      <!-- Categoría: Avanzados -->
+      <div id="advanced" class="category advanced">
+        <h2>Proyectos Avanzados</h2>
+        <div class="projects">
+          <div class="project">
+            <img src="assets/img/reddit.png" alt="Cliente Reddit">
+            <h3>Cliente Reddit</h3>
+            <p>Un cliente Reddit interactivo que permite a los usuarios explorar publicaciones de diferentes subreddits
+              en carriles personalizables.</p>
+            <a href="https://jairo51067.github.io/Reddit-Client/" target="_blank">Ver proyecto</a>
+          </div>
+          <div class="project">
+            <img src="assets/img/pizzas-deliciosas.png" alt="Pizzas Deliciosas">
+            <h3>Pizzas Deliciosas - Aplicación de Pedidos</h3>
+            <p>Permite personalizar pedidos de pizza y calcular precios en tiempo real.</p>
+            <a href="https://jairo51067.github.io/Men-_Restaurant/" target="_blank">Ver proyecto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría: Intermedios -->
+      <div id="intermediate" class="category intermediate">
+        <h2>Proyectos Intermedios</h2>
+        <div class="projects">
+          <div class="project">
+            <img src="assets/img/temperature-conversor-movil.png" alt="Temperature Converter">
+            <h3>Temperature Converter</h3>
+            <p>Este proyecto es un Conversor de Temperaturas que permite a los usuarios ingresar un valor de temperatura
+              y seleccionar las unidades desde y hacia las que desean convertir. Desarrollado para facilitar la
+              conversión entre Celsius, Fahrenheit y Kelvin, este proyecto fue inspirado por la necesidad de tener una
+              herramienta accesible y fácil de usar para cálculos de temperatura. La aplicación no solo realiza
+              conversiones precisas, sino que también muestra el resultado en un modal atractivo, mejorando la
+              experiencia del usuario.</p>
+            <a href="https://temperature-converter-omega-mauve.vercel.app/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/Conversor de monedas_light.png" alt="Conversor de Moneda">
+            <h3>Conversor de Moneda</h3>
+            <p>Este proyecto, Conversor de Moneda, es una aplicación web interactiva diseñada para convertir monedas en
+              tiempo real utilizando tasas oficiales actualizadas a través de una API externa. Desafíos superados
+              incluyen la integración de datos externos con el manejo de errores para garantizar una experiencia de
+              usuario confiable, y la implementación de un diseño adaptable con tema oscuro/claro. El proyecto demuestra
+              un entendimiento sólido del desarrollo web frontend y está enfocado en resolver un problema cotidiano con
+              una solución funcional y estéticamente atractiva.</p>
+            <a href="https://conversor-de-monedas-del-mundo.vercel.app" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/buscador-de-repositorios_1.png" alt="Buscador de Repositorios GitHub">
+            <h3>Buscador de Repositorios GitHub - GitHub Repo Finder</h3>
+            <p>Este proyecto consiste en un buscador dinámico de repositorios de GitHub, que permite a los usuarios
+              explorar repositorios de código según su lenguaje de programación preferido. Los datos del menú
+              desplegable se cargan desde un archivo JSON externo, y el sistema utiliza la API de GitHub para recuperar
+              información en tiempo real. Este proyecto demuestra habilidades en consumo de APIs, manipulación del DOM y
+              diseño responsivo. Los desafíos principales fueron integrar datos dinámicos y asegurar una experiencia de
+              usuario fluida." Este proyecto está diseñado para trabajar con API externas, manejar solicitudes
+              asincrónicas y administrar diferentes estados de la interfaz de usuario con JavaScript.</p>
+            <a href="https://jairo51067.github.io/GitHub-Random-Repository-/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/Cookie Consent.png" alt="Cookie Consent Project">
+            <h3>Cookie Consent Project</h3>
+            <p>Este proyecto implementa un banner interactivo para el consentimiento de cookies, cumpliendo con las
+              normativas modernas. Además, incluye una galería de imágenes organizada en un diseño de cuadrícula con
+              tooltips explicativos que resaltan conceptos tecnológicos. Fue desarrollado para mejorar la experiencia
+              del usuario y proporcionar un diseño visualmente atractivo.</p>
+            <a href="https://jairo51067.github.io/Cookie-Consent/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/generador-de-contraseñas-segura.png" alt="proyecto_futuro">
+            <h3>Generador de Contraseñas Fuertes</h3>
+            <p>El Generador de Contraseñas Fuertes es una herramienta interactiva diseñada para crear contraseñas
+              únicas, seguras y resistentes a ataques. Permite a los usuarios generar contraseñas aleatorias al instante
+              y copiarlas fácilmente al portapapeles. Este proyecto se desarrolló con el propósito de mejorar la
+              seguridad en línea, proporcionando una solución sencilla pero eficaz.</p>
+            <a href="https://jairo51067.github.io/Generador-de-Contrasenas-Seguras/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/encriptador.png" alt="proyecto_futuro">
+            <h3>Encriptación de mensajes</h3>
+            <p>Este proyecto es un encriptador de mensajes en línea que permite a los usuarios encriptar y desencriptar
+              textos de manera sencilla. Su propósito es ayudar a los usuarios a mantener la privacidad de sus mensajes
+              mediante un algoritmo de encriptación simple. La inspiración para este proyecto provino del deseo de
+              aprender sobre manipulación de cadenas y algoritmos de encriptación.</p>
+            <a href="https://jairo51067.github.io/Desafio_1_AluraLatam_G4_Front-End_Encriptador/" target="_blank">Ver
+              proyecto</a>
+          </div>
+
+          <!-- <div class="project">
+            <img src="assets/img/proyecto_futuro.jpg" alt="proyecto_futuro">
+            <h3>Proyecto Futuro</h3>
+            <p>Proyecto-Futuro en construcción y diseño.</p>
+            <a href="https://proyecto-futuro.com" target="_blank">Ver proyecto</a>
+          </div> -->
+
+          <!-- Agregar más proyectos intermedios aquí -->
+        </div>
+      </div>
+
+      <!-- Categoría: Básicos -->
+      <div id="basic" class="category basic">
+        <h2>Proyectos Básicos</h2>
+        <div class="projects">
+          <div class="project">
+            <img src="assets/img/Galeria Arte y Diseño.png" alt="Galeria Arte y Diseño">
+            <h3>Galeria Arte y Diseño</h3>
+            <p>Esta plataforma web interactiva permite a los usuarios explorar una galería virtual de arte, descubrir
+              artistas destacados y mantenerse informados sobre las últimas exposiciones. Inspirado en la pasión por el
+              arte y el diseño, este proyecto busca conectar a los usuarios con una experiencia visual única.</p>
+            <a href="https://jairo51067.github.io/Galerias_De_Obras_De_Arte/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/Acordion_1.png" alt="Accordion FAQ: Un componente dinámico para preguntas frecuentes">
+            <h3>Accordion FAQ: Un componente dinámico para preguntas frecuentes</h3>
+            <p>Este proyecto es un componente web interactivo que organiza contenido en un formato de acordeón. Diseñado
+              para mostrar preguntas frecuentes (FAQs) en una interfaz ordenada y eficiente, permite expandir y contraer
+              secciones con un clic, cerrando automáticamente las abiertas previamente. Desarrollado con tecnologías
+              base de desarrollo web, es una solución ligera y funcional que mejora la experiencia del usuario en sitios
+              informativos.</p>
+            <a href="https://jairo51067.github.io/Accordion/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/textarea restrigido.png" alt="Restricted Textarea">
+            <h3>Restricted Textarea</h3>
+            <p>Restricted Textarea" es un componente interactivo que limita el número de caracteres permitidos en un
+              campo de texto. Cambia dinámicamente el color del borde y del texto según el número de caracteres
+              escritos, proporcionando una experiencia de usuario clara e intuitiva. Fue creado para ser reutilizable en
+              proyectos web más grandes.</p>
+            <a href="https://jairo51067.github.io/Restricted-Textarea/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/grid layout image.png" alt="Image Grid Layout">
+            <h3>Image Grid Layout</h3>
+            <p>Este proyecto demuestra un diseño de cuadrícula de imágenes adaptable (responsive), optimizado para
+              diferentes tamaños de pantalla y enriquecido con etiquetas meta para SEO. Permite explorar imágenes con
+              descripciones emergentes (tooltips) en un diseño limpio y accesible. Fue desarrollado para practicar
+              diseño responsivo y habilidades de optimización web.</p>
+            <a href="https://jairo51067.github.io/Image-Grid-Layout/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/Formulario Accesible.png"
+              alt="Formulario accesible para actualizar perfil con interfaz moderna">
+            <h3>Formulario accesible para actualizar perfil con interfaz moderna</h3>
+            <p>Este formulario permite a los usuarios actualizar su información de perfil de manera accesible y
+              eficiente. Su propósito principal es demostrar cómo integrar buenas prácticas de accesibilidad, validación
+              y diseño moderno en un formulario de uso cotidiano. Este proyecto fue inspirado por la necesidad de
+              formularios más inclusivos y visualmente atractivos.</p>
+            <a href="https://jairo51067.github.io/Accessible-Form-UI/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/Selector de fechas.png" alt="Selector Fechas de Cumpleaños">
+            <h3>Selector Fechas de Cumpleaños</h3>
+            <p>Este proyecto proporciona una interfaz de usuario básica para recopilar información de contacto y la
+              fecha de cumpleaños de un usuario. Puede servir como punto de partida para crear formularios más complejos
+              y personalizados.</p>
+            <a href="https://jairo51067.github.io/Selector-Fechas-de-Cumpleanos-/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <div class="project">
+            <img src="assets/img/Fashion Shop.png" alt="Fashion Shop">
+            <h3>Fashion Shop</h3>
+            <p>Fashion Shop es una tienda en línea que ofrece una variedad de ropa deportiva y casual para todas las
+              edades y ocasiones. Este proyecto fue desarrollado con el propósito de mostrar mis habilidades en
+              desarrollo web front-end y proporcionar una experiencia de usuario atractiva y funcional.</p>
+            <a href="https://jairo51067.github.io/Any-fashion-Shop/" target="_blank">Ver proyecto</a>
+          </div>
+
+          <!-- <div class="project">
+            <img src="assets/img/proyecto_futuro.jpg" alt="proyecto_futuro">
+            <h3>Proyecto Futuro</h3>
+            <p>Proyecto-Futuro en construcción y diseño.</p>
+            <a href="https://proyecto-futuro.com" target="_blank">Ver proyecto</a>
+          </div> -->
+
+          <!-- <div class="project">
+            <img src="assets/img/proyecto_futuro.jpg" alt="proyecto_futuro">
+            <h3>Proyecto Futuro</h3>
+            <p>Proyecto-Futuro en construcción y diseño.</p>
+            <a href="https://proyecto-futuro.com" target="_blank">Ver proyecto</a>
+          </div> -->
+
+          <!-- Agregar más proyectos básicos aquí -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- pie de pagina -->
+  <footer class="container-fluid bg-black py-3 border-top border-2">
+    <div class="container text-center text-md-start text-white d-sm-flex justify-content-between">
+      <div class="text-start my-3">
+        <ul class="list-unstyled list-inline my-3">
+          <li class="list-inline-item text-white">
+            <a href="https://www.linkedin.com/in/jairo-antonio-c%C3%A1rdenas-morales-49b94b25" target="_blank"
+              class="text-white mx-2 fs-5">
+              <i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <!-- <li class="list-inline-item">
+                    <a href="https://github.com/jairo51067?tab=repositories" target="_blank"
+                        class="text-white mx-2 fs-5">
+                        <i class="fa-brands fa-square-github"></i></a>
+                </li> -->
+        </ul>
+      </div>
+      <div class="text-start my-3">
+        <p class="my-3">Copyright&copy;2024 Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Archivos Bootstrap JavaScript -->
+  <script src="jquery-3.7.1.min.js" defer></script>
+  <script src="popper.min.js" defer></script>
+  <script src="bootstrap.min.js" defer></script>
+
+  <script src="js/proyectos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
