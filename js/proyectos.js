@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
           imageHeight: 200,
           imageAlt: title,
           confirmButtonText: 'Visitar Proyecto',
+          confirmButtonColor: 'orangered',
           showCloseButton: true,
           showCancelButton: true,
           cancelButtonText: 'Cerrar',
