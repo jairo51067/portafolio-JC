@@ -7,7 +7,8 @@ Este portafolio personal es una vitrina digital que refleja mi trayectoria como 
 ## Imagen del proyecto
 <br>
 
-![portafolio_2](https://github.com/user-attachments/assets/a80c5078-5e77-49b7-8233-d980707f6208)
+![portafolio_1](https://github.com/user-attachments/assets/4865f204-a9a9-437c-96b4-f4db4c0a3c44)
+
 
 ## Descripción
 Este portafolio personal es un sitio web diseñado para mostrar mis habilidades y proyectos como desarrollador web. Su propósito es proporcionar una plataforma donde los reclutadores y clientes potenciales puedan conocerme y explorar mis trabajos anteriores. Me inspiré en la necesidad de tener una presencia en línea profesional y accesible.
