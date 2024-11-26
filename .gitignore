@@ -46,7 +46,7 @@ Thumbs.db
 
 # Documentos generados automáticamente
 *.docx
-*.pdf
+
 *.pptx
 
 # Configuración de Webpack
