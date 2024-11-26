@@ -108,11 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    filterButtons.forEach((button) => {
-      button.classList.remove('active');
-      if (button.dataset.filter === currentSection) {
-        button.classList.add('active');
-      }
+    // filterButtons.forEach((button) => {
+    //   button.classList.remove('active');
+    //   if (button.dataset.filter === currentSection) {
+    //     button.classList.add('active');
+    //   }
     });
   });
-});
+
