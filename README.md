@@ -28,5 +28,9 @@ Este portafolio personal es un sitio web diseñado para mostrar mis habilidades 
 ## Agradecimientos
 Agradezco a todos los recursos en línea, cursos y comunidades que me han apoyado en mi aprendizaje y desarrollo como profesional en el campo del desarrollo web. En particular, quiero agradecer a plataformas como Udemy y YouTube, donde encontré tutoriales y guías que me ayudaron a mejorar mis habilidades. También agradezco a mis compañeros desarrolladores por su apoyo y colaboración en este camino.
 
-https://jairo51067.github.io/portafolio-JC/ 
-deployed by  @jairo51067 
+## Autor
+Este proyecto fue desarrollado por **Jairo Cárdenas**.  
+Si tienes preguntas o sugerencias, contáctame:
+- Correo electrónico: [jairo.cardenas.dev@gmail.com](mailto:jairo.cardenas.dev@gmail.com)
+- GitHub: [@jairo51067](https://github.com/jairo51067)
+
