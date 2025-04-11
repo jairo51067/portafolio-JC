@@ -1,7 +1,7 @@
 .chatbot {
   position: fixed;
-  bottom: 130px;
-  right: 35px;
+  bottom: 170px;
+  right: 55px;
   width: 300px;
   padding: 0.3%;
   /* border: 1px solid #ccc; */
@@ -34,10 +34,10 @@
 
 #x-close {
   cursor: pointer;
-  font-size: 20px;
+  /* font-size: 20px; */
   color: black; /* Color del icono de cerrar */
   transition: color 0.3s ease;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 
 
 }
