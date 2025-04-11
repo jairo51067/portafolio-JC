@@ -1,0 +1,76 @@
+.chatbot {
+  position: fixed;
+  bottom: 130px;
+  right: 35px;
+  width: 300px;
+  padding: 0.3%;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  background-color: white;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  display: none; /* Oculto por defecto */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+@media screen and (max-width: 450px) {
+ 
+  #btn-menu-rapido {
+    display: none;
+  }
+  
+}
+
+.chatbot-header {
+  background-color: orangered; /* Color de fondo del encabezado */
+  color: white; /* Color del texto */
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+#x-close {
+  cursor: pointer;
+  font-size: 20px;
+  color: black; /* Color del icono de cerrar */
+  transition: color 0.3s ease;
+  padding-bottom: 25px;
+
+
+}
+
+.chatbot-messages {
+  height: 130px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f9f9f9; /* Color de fondo de los mensajes */
+  color : #333; /* Color del texto de los mensajes */
+  text-align: justify;
+}
+
+.chatbot-messages p {
+  margin: 5px 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.button-container button {
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: orangered; /* Color de fondo del botón */
+  color: white;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #000000;
+}
