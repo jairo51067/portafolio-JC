@@ -310,7 +310,7 @@
 
                     <hr class="mb-4">
                     <p>
-                        <i class="fas fa-phone me-3 text-success"></i><a href="https://wa.me/5804161709611"
+                        <i class="fas fa-phone me-3 text-success"></i><a href="https://wa.me/5804127055024"
                             target="_blank" class="text-success"><strong>WhatsApp</strong></a><br>+ 58 - 0412 - 7055024
                     </p>
 
@@ -358,29 +358,32 @@
         </div>
     </footer>
 
-    <!-- Estructura HTML del Chatbot -->
-    <div id="chatbot" class="chatbot">
-        <div class="chatbot-header">
-            <h3>Menu Rápido</h3>
-            <i id="x-close" class="fa-regular fa-rectangle-xmark" onclick="toggleChat()"></i>
-        </div>
-        <div class="chatbot-messages" id="chatbot-messages"></div>
-        <div id="button-container" class="button-container"></div>
+   <!-- Estructura HTML del Chatbot -->
+   <div id="chatbot" class="chatbot">
+    <div class="chatbot-header">
+        <h3>Menu Rápido</h3>
+        <i id="x-close" class="fa-solid fa-circle-xmark" onclick="toggleChat()"></i>
     </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div id="button-container" class="button-container"></div>
+</div>
 
-
-    <button id="btn-menu-rapido" onclick="toggleChat()"
-        style="
-        position: fixed; 
-        bottom: 35px; 
-        left: 20px; 
-        background-color: orangered; 
-        color: white; 
-        border: none; 
-        border-radius: 5px; 
-        padding: 10px; 
-        cursor: pointer;">
-        Menu Rápido</button>
+<button id="btn-menu-rapido" onclick="toggleChat()" style="
+    position: fixed; 
+    bottom: 35px; 
+    left: 20px; 
+    background-color: orangered; 
+    color: black;
+    font-weight: bold;
+    border:none; 
+    border-radius: 5px; 
+    padding: 10px; 
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1px 2px 8px rgba(255, 255, 255, 255);
+    transition: box-shadow 0.3s ease;">
+    Menu Rápido
+</button>
 
     <!-- Archivos Bootstrap JavaScript -->
     <script src="jquery-3.7.1.min.js" defer></script>
@@ -393,7 +396,7 @@
     <!-- Archivos JavaScript Generales -->
     <script src="js/main.js" defer></script>
 
-    <!-- Archivos chatbot -->
+    <!-- Archivos chatbot - menu rapido -->
     <script src="//code.tidio.co/stlwy4ldw53bp8s0i3bwyax79y3ynumx.js" async></script>
     <script src="js/menurapido.js"></script>
 

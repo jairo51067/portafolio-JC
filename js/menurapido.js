@@ -1,7 +1,7 @@
 function toggleChat() {
   const chatbot = document.getElementById('chatbot');
   const messagesContainer = document.getElementById('chatbot-messages');
-  // const buttonContainer = document.getElementById('button-container');
+  
   
   if (chatbot.style.display === 'none') {
       chatbot.style.display = 'block';
@@ -18,16 +18,17 @@ function showButtons() {
   buttonContainer.innerHTML = ''; // Limpiar botones anteriores
 
   const options = [
-      { text: 'Ver mis proyectos', action: () => { window.location.href = 'proyectos.html'; toggleChat(); } },
-      { text: 'Conóceme', action: () => { window.location.href = '#conoceme'; toggleChat(); } },
-      { text: 'Escríbeme', action: () => { window.location.href = '#escribeme'; toggleChat(); } },
-      { text: 'Mi Curriculum', action: () => { window.location.href = "doc/V2024_11_22 JAIRO A CARDENAS M.pdf"; toggleChat(); } },
-      
+      { text: '👁️‍🗨️ Mis proyectos', action: () => { window.location.href = 'proyectos.html'; toggleChat(); }, style: 'color: #fff; background-color: #333;' },
+      { text: ' 👤 Conóceme', action: () => { window.location.href = '#conoceme'; toggleChat(); }, style: 'color: #fff; background-color: #333;' },
+      { text: '✍ Escríbeme', action: () => { window.location.href = '#escribeme'; toggleChat(); }, style: 'color: #fff; background-color: #333;' },
+      { text: '📃 Mi Curriculum', action: () => { window.location.href="doc/V2024_11_22 JAIRO A CARDENAS M.pdf"; toggleChat(); }, style: 'color: #fff; background-color: #333;' },
+      { text: '☎ WhatsApp', action: () => { window.location.href="https://wa.me/5804127055024"; toggleChat(); }, style: 'background-color: 	#25d366;' },
   ];
 
   options.forEach(option => {
       const button = document.createElement('button');
-      button.textContent = option.text;
+      button.innerText = option.text;
+      button.setAttribute('style', option.style);
       button.onclick = option.action;
       buttonContainer.appendChild(button);
   });
