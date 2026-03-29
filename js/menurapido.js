@@ -21,8 +21,8 @@ function showButtons() {
       { text: '👁️‍🗨️ Mis proyectos', action: () => { window.location.href = 'proyectos.html'; toggleChat(); }, style: 'color: #fff; background-color: #333;' },
       { text: ' 👤 Conóceme', action: () => { window.location.href = '#conoceme'; toggleChat(); }, style: 'color: #fff; background-color: #333;' },
       { text: '✍ Escríbeme', action: () => { window.location.href = '#escribeme'; toggleChat(); }, style: 'color: #fff; background-color: #333;' },
-      { text: '📃 Mi Curriculum', action: () => { window.location.href="doc/Jairo_Cardenas_CV_Desarrollador_Full_Stack.pdf"; toggleChat(); }, style: 'color: #fff; background-color: #333;' },
-      { text: '☎ WhatsApp', action: () => { window.location.href="https://wa.me/5804127055024"; toggleChat(); }, style: 'background-color: 	#25d366;' },
+      { text: '📃 Mi Curriculum', action: () => { window.open("doc/Jairo_Cardenas_CV_Desarrollador_Full_Stack_3-2026.pdf", "_blank"); toggleChat(); }, style: 'color: #fff; background-color: #333;' },
+      { text: '☎ WhatsApp', action: () => { window.open("https://wa.me/5804127055024", "_blank"); toggleChat(); }, style: 'background-color: 	#25d366;' },
   ];
 
   options.forEach(option => {

@@ -59,9 +59,13 @@
                 <div class="collapse navbar-collapse" id="menu-principal">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active pulsante" href="proyectos.html">Mis Trabajos</a>
-                            <!-- Definimos un enlace activo colocando la clase “active” -->
+                            <a class="nav-link active pulsante" href="proyectos.html" id="btn-proyectos">Mis
+                                Trabajos</a>
                         </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active pulsante" href="proyectos.html">Mis Trabajos</a>
+                            Definimos un enlace activo colocando la clase “active” 
+                        </li> -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Mi formación</a> <!--Mis fortalezas -->
@@ -86,8 +90,8 @@
                             <button class="nav-link" id="btnTituloYTexto">Descargar CV</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="doc/Jairo_Cardenas_CV_Desarrollador_Full_Stack_3-2026.pdf" target="_blank"><i
-                                    class="fa-solid fa-print me-2"></i></a>
+                            <a class="nav-link" href="doc/Jairo_Cardenas_CV_Desarrollador_Full_Stack_3-2026.pdf"
+                                target="_blank"><i class="fa-solid fa-print me-2"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -216,11 +220,12 @@
             <div class="border border-3 p-3 transition-texto">
                 <h1>Formación autodidacta:</h1>
                 <ol>
-                    <li>Habilidades adquiridas: 
-                        •	Front-end: HTML5 (Avanzado), CSS3 (Avanzado), JavaScript (Intermedio), React (Intermedio), Angular
-                        •	Back-end: Node.js (Básico), PHP, Laravel, SQL, MySQL, Bases de Datos
-                        •	Herramientas: Git, GitHub, Notion, Trello, Jira, Figma, Bootstrap, Tailwind, Sass, JQuery
-                        •	Idiomas: español (nativo), inglés (B2), portugués (B2).
+                    <li>Habilidades adquiridas:
+                        • Front-end: HTML5 (Avanzado), CSS3 (Avanzado), JavaScript (Intermedio), React (Intermedio),
+                        Angular
+                        • Back-end: Node.js (Básico), PHP, Laravel, SQL, MySQL, Bases de Datos
+                        • Herramientas: Git, GitHub, Notion, Trello, Jira, Figma, Bootstrap, Tailwind, Sass, JQuery
+                        • Idiomas: español (nativo), inglés (B2), portugués (B2).
                     </li>
                     <li>De manera secuencial y constante, me he dedicado con entusiasmo y decisión al aprendizaje y
                         manejo de las habilidades que he ido desarrollando. Para ello, me he apoyado en diversos
@@ -361,17 +366,17 @@
         </div>
     </footer>
 
-   <!-- Estructura HTML del Chatbot -->
-   <div id="chatbot" class="chatbot">
-    <div class="chatbot-header">
-        <h3>Menu Rápido</h3>
-        <i id="x-close" class="fa-solid fa-circle-xmark" onclick="toggleChat()"></i>
+    <!-- Estructura HTML del Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>Menu Rápido</h3>
+            <i id="x-close" class="fa-solid fa-circle-xmark" onclick="toggleChat()"></i>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div id="button-container" class="button-container"></div>
     </div>
-    <div class="chatbot-messages" id="chatbot-messages"></div>
-    <div id="button-container" class="button-container"></div>
-</div>
 
-<button id="btn-menu-rapido" onclick="toggleChat()" style="
+    <button id="btn-menu-rapido" onclick="toggleChat()" style="
     position: fixed; 
     bottom: 35px; 
     left: 20px; 
@@ -385,8 +390,8 @@
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 1px 2px 8px rgba(255, 255, 255, 255);
     transition: box-shadow 0.3s ease;">
-    Menu Rápido
-</button>
+        Menu Rápido
+    </button>
 
     <!-- Archivos Bootstrap JavaScript -->
     <script src="jquery-3.7.1.min.js" defer></script>
