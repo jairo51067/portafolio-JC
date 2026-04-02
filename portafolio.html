@@ -86,13 +86,31 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#escribeme">Escríbeme</a>
                         </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="btnTituloYTexto">Descargar CV</button>
+
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" id="btnTituloYTexto"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Descargar CV <i class="fa-solid fa-language ms-1"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="btnTituloYTexto">
+                                <li>
+                                    <a class="dropdown-item cv-link" href="#" data-idioma="es">
+                                        <i class="fa-solid fa-globe me-2"></i>🇪🇸 Español
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item cv-link" href="#" data-idioma="en">
+                                        <i class="fa-solid fa-globe me-2"></i>🇺🇸 English
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="doc/Jairo_Cardenas_CV_Desarrollador_Full_Stack_3-2026.pdf"
-                                target="_blank"><i class="fa-solid fa-print me-2"></i></a>
-                        </li>
+
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -366,32 +384,34 @@
         </div>
     </footer>
 
-    <!-- Estructura HTML del Chatbot -->
-    <div id="chatbot" class="chatbot">
-        <div class="chatbot-header">
-            <h3>Menu Rápido</h3>
-            <i id="x-close" class="fa-solid fa-circle-xmark" onclick="toggleChat()"></i>
+    <!-- Botón flotante -->
+    <div class="chat-toggle" id="chat-toggle">💬</div>
+
+    <!-- Contenedor del chat -->
+    <div class="chat-container" id="chatbot">
+        <div class="chat-header">
+            <span>Jairo Cárdenas - Menu Rápido</span>
+            <button id="close-chat">✖</button>
         </div>
-        <div class="chatbot-messages" id="chatbot-messages"></div>
-        <div id="button-container" class="button-container"></div>
+
+        <div class="chat-messages" id="chatbot-messages"></div>
+
+        <div id="typing-indicator" class="typing-indicator">Jairo está escribiendo...</div>
+
+        <div class="chat-buttons" id="button-container"></div>
+
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Escribe tu mensaje..." />
+            <button id="send-btn">Enviar</button>
+        </div>
     </div>
 
-    <button id="btn-menu-rapido" onclick="toggleChat()" style="
-    position: fixed; 
-    bottom: 35px; 
-    left: 20px; 
-    background-color: orangered; 
-    color: black;
-    font-weight: bold;
-    border:none; 
-    border-radius: 5px; 
-    padding: 10px; 
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-    box-shadow: 1px 2px 8px rgba(255, 255, 255, 255);
-    transition: box-shadow 0.3s ease;">
-        Menu Rápido
-    </button>
+    <!-- Sonidos -->
+    <audio id="chat-open-sound" src="https://www.soundjay.com/button/sounds/button-16.mp3" preload="auto"></audio>
+    <audio id="chat-message-sound" src="https://www.soundjay.com/button/sounds/button-3.mp3" preload="auto"></audio>
+
+
+
 
     <!-- Archivos Bootstrap JavaScript -->
     <script src="jquery-3.7.1.min.js" defer></script>

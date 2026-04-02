@@ -28,5 +28,6 @@
         "Udemy"
     ],
     "pieces.cloudCapabilities": "Blended",
-    "pieces.telemetry": true
+    "pieces.telemetry": true,
+    "liveServer.settings.port": 5501
 }
