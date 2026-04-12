@@ -1,3 +1,11 @@
+⚠️ This is my old portfolio.
+
+I have rebuilt my portfolio with a more modern architecture and improved UI/UX:
+
+👉 New Portfolio: https://jairo51067.github.io/NEW-REPO
+
+
+
 # Portafolio de Jairo Cárdenas
 Este portafolio personal es una vitrina digital que refleja mi trayectoria como desarrollador web y programador. A lo largo del desarrollo de este proyecto, superé desafíos como la implementación de un diseño responsivo y atractivo que se adapta a diferentes dispositivos, así como la integración de animaciones y efectos visuales que mejoran la experiencia del usuario. Utilizando tecnologías como HTML5, CSS3, Bootstrap y JavaScript, logré crear una plataforma que no solo muestra mis habilidades técnicas, sino que también comunica mi pasión por el desarrollo web. 
 
